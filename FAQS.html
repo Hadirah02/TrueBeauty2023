@@ -1,0 +1,200 @@
+<html>
+<head>
+<link href="asset/css/style.css" rel="stylesheet">
+<title>FAQS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+<div class="full-height">
+<center> 
+<section class="heading">
+     <div class="container">
+        <div class="row">
+            <div class="home-text">
+                 
+                 <p class="animate-text">
+                    <span>Guarantee save for your skin.</span>
+                    <span>Dermatologically tested & proven.</span>
+                    <span>Based on natural ingredients.</span>
+                 </p>
+            </div>
+        </div>
+     </div>
+ </section>
+
+
+
+<script>
+         const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+   
+</script>
+</div>
+
+<br>
+
+<img src="asset/image/logo.png"width="15%" >
+
+<marquee width="73%" direction=right height="100px" scrollamount="12">
+<p style="font-family:georgia; font-size:40px">Love Your Skin with True Beauty!</p>
+</marquee>
+
+
+<div class="rightnav">
+<a href= "Store.html" > <img src="asset/image/shop.png" width="40px" height="40px"></a>
+<a href= "Help.html" > <img src="asset/image/help1.png" width="35px" height="35px"></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"><img src="asset/image/feedback2.png"width="35px" height="35px"></a> 
+</div>
+
+
+
+
+
+<br><br>
+
+<div class="navbar">
+  <div class="topnav">
+  <a class="active" 
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutus.html">About us</a>
+      <a href="organizational.html">Organizational Chart</a>
+    </div>
+    </div>
+  <a href="Product.html">Product</a>
+  <a href="Contact.html">Contact</a> 
+  </div> 
+</div>
+</div>
+
+
+<div class="box">
+   <p class="heading">FAQs</p>
+   <div class="faqs">
+
+      <details>
+         <summary>ARE TRUE BEAUTY SKINCARE PRODUCTS VEGAN OR CRUELTY FREE?</summary>
+         <p class="text">Yes. All True Beauty products are vegan, cruelty-free, and certified by Kementerian Kesihatan Malaysia (KKM).</p>
+      </details>
+         
+      <details>
+         <summary>ARE ALL TRUE BEAUTY SKINCARE PRODUCTS FRAGRANCE FREE?</summary>
+         <p class="text">Yes, all True Beauty products are available without fragrance.</p>
+      </details>
+
+      <details>
+         <summary>ARE TRUE BEAUTY SKINCARE PRODUCTS CLEAN?</summary>
+         <p class="text">True Beauty products are formulated with high global standards. Though we are direct-to-consumer, our ingredient lists are in line with the clean standards specified by third-party retailers such as Sephora and ULTA.</p>
+      </details>
+
+
+      <details>
+         <summary>HOW LONG WILL MY ORDER TAKE TO ARRIVE?</summary>
+         <p class="text">We process and ship orders M-F, excluding holidays. Please allow up to 3 business days for orders <br>
+                         to be processed before shipping.Your order may take longer to ship if we're experiencing high order volume. You’ll get a notification and                          tracking number via email when a track number been created.
+                         It may take a few days for tracking to show movement, depending on the carrier and delays they are experiencing. On average, orders are                                 delivered 5-7 business days after fulfillment. We are currently experiencing delays with order fuflillment and most orders should deliver                          within 7-10 business days. We are not responsible for any delays with carrier
+                         transit times.</p>
+      </details>
+
+      <details>
+         <summary>HOW MUCH IS SHIPPING?</summary>
+         <p class="text">Standard Shipping, available for most domestic locations (3-7 business days after fulfillment) is RM8 for Peninsular Malaysia and RM15 for                          Sabah & Sarawak. Standard Shipping is free for all orders over RM200.</p>
+      </details>
+
+      <details>
+         <summary>WHERE DO YOU SHIP?</summary>
+         <p class="text">We ship to all states in Malaysia including Sabah & Sarawak.</p>
+      </details>
+
+      <details>
+         <summary>DO YOU SHIP INTERNATIONALLY?</summary>
+         <p class="text">Not at this time, but we’re aiming to be available internationally in the future!<br><br>
+                         Please note: We do not support the use of freight forwarders. If you choose to place an order using <br> a freight forwarder or third party                             international shipping service for packages to arrive to a country where we currently do not ship, we cannot guarantee any goods in your                                order will arrive properly, on time, or without potential damage. Additionally, we cannot accept returns or offer refunds for any items                                 delivering to a freight forwarder or shipment locations other than our approved list of destinations.</p>
+       </details>
+
+       <details>
+          <summary>I'M EXPERIENCING ORDER ISSUES. HAS MY ORDER SHIPPED?</summary>
+         <p class="text">We are working hard to resolve the order issues many of you have experienced. Please know that if you placed an order anytime before 12/7, it                          has been collected from our warehouse and is on its way to you: <br><br>
+  <ul>
+  <li> Orders placed 11/22 were collected on or before 11/30.</li>
+  <li> Orders placed 11/25 through 11/30 were collected on or before 12/8.</li>
+  <li> Orders placed 12/1 through 12/7 were collected on or before 12/10.</li>
+  </ul></p>
+
+      
+   </div>
+</div>
+
+
+
+<br><br><br><br>
+
+
+<br><br>
+<center>
+<a href="#MY_FIRST_ANCHOR"> <img src="asset/image/arrow.png" width="40px" heigh="40px"></a>
+</center>
+<br><br>
+
+
+
+<div class="footer">
+
+<br>
+
+<a href="FAQS.html"><b>FAQS</a>
+<a href="Shipping Information.html">Shipping Information</a>
+<a href="terms and policy.html">Terms and Policy</b></a>
+
+<br><br>
+
+<a href="https://www.instagram.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/ig.png" width="80px" height="80px"></a>  
+<a href= "https://wa.me/601126813552/" target="_blank"> <img src="asset/image/wa.png" width="80px" heigh="80px"></a>
+<a href= "https://www.facebook.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/fb.png" width="80px" height="80px"></a>
+
+<p class="main6"> © 2023 - True Beauty Sdn Bhd - All Rights Reserved </font></p>
+<hr>
+<p class="main6">STANDARD SHIPPING IS FREE FOR ALL ORDERS OVER RM200. <a href="product.html"><u><B>SHOP NOW</U></B></a></p>
+
+</body>
+
+
+</html>
+
+
